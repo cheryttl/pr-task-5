@@ -1,0 +1,47 @@
+{
+  "plugins": [
+    "prettier-plugin-tailwindcss"
+  ],
+  "tailwindFunctions": [
+    "tv"
+  ],
+  "semi": true,
+  "singleQuote": true,
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "proseWrap": "preserve",
+  "overrides": [
+    {
+      "files": [
+        "*.yml",
+        "*.yaml"
+      ],
+      "options": {
+        "singleQuote": false
+      }
+    },
+    {
+      "files": [
+        "*.json",
+        "*.jsonc",
+        "*.json5"
+      ],
+      "options": {
+        "printWidth": 120
+      }
+    },
+    {
+      "files": [
+        "*.md"
+      ],
+      "options": {
+        "proseWrap": "always"
+      }
+    }
+  ]
+}
