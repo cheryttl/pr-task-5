@@ -36,9 +36,12 @@ export const IntelligentForm = () => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       // Используем палитру: сливочно-желтый фон и шоколадный текст
-      className="w-full max-w-md rounded-2xl bg-[#FFFDD0] text-[#4A2511] p-8 shadow-2xl"
+      className="w-full max-w-md rounded-2xl bg-[#FFFDD0] text-[#000000] p-8 shadow-2xl"
     >
-      <h2 className="mb-6 text-2xl font-bold border-b-2 border-[#FFFDD0]/20 pb-4">
+      <h2 
+        className="mb-6 text-2xl font-bold border-b-2 pb-4"
+        style={{ color: '#4A2511', borderColor: 'rgba(74, 37, 17, 0.2)' }}
+      >
         Регистрация на ивент
       </h2>
 
