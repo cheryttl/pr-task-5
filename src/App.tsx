@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { IntelligentForm } from './components/IntelligentForm';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -191,6 +192,11 @@ export default function App() {
             Поводи мышкой
           </div>
         </div>
+      </section>
+
+      <section className="flex min-h-screen flex-col items-center justify-center gap-10 py-20 bg-zinc-900/30">
+        <h2 className="text-center text-3xl font-bold text-zinc-300">Интеллектуальная форма</h2>
+        <IntelligentForm />
       </section>
     </div>
   );
